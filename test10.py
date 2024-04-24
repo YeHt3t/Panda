@@ -1,5 +1,5 @@
 username = "Ye Htet"
-pwd = "12345678"
+pwd = "password123"
 
 user = input("Enter your username : ")
 password = input("Enter Password : ")
