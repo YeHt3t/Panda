@@ -11,3 +11,6 @@ print(Buy[:4])
 print(Buy[2:])
 
 print(Buy[3:6])
+
+if 'ghost' in Buy:
+    print("Bought")
