@@ -8,7 +8,7 @@ fav_player = {
 
 # print(fav_player['name'])
 
-# fav_player['team'] = 'Cloud9'
+# fav_player['team'] = 'M80'
 # print(fav_player['team'])
 
 
