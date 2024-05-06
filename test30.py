@@ -10,3 +10,13 @@ class Smartphone(Phone):
 
     def game(link):
         print("Playing Game")
+        while True:
+            if link.battery >= 10:
+                link.battery -= 10
+                print("You have", link.battery, "% left")
+            elif link.battery >= 30:
+                print("Low Battery")
+
+            else:
+                print("Out of battery")
+                break
