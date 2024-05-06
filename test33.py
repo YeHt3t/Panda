@@ -13,7 +13,7 @@ class Smartphone():
             link.battery -= 10
             link.games += 1
             print(link.games , " game done", link.battery)
-            time.sleep(2)
+            time.sleep(1)
             if link.battery <= 30:
                 print("Low battery")
                 break

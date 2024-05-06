@@ -1,22 +1,26 @@
-from test28 import Phone
+import time
 
-class Smartphone(Phone):
+class Smartphone():
 
-    def __init__(link, brand, model, battery=100):
-        super().__init__(brand, model, battery)
+    def __init__(self, brand, model, battery=100, games=0):
+        self.brand = brand
+        self.model = model
+        self.battery = battery
+        self.games = games
 
-    def touch(link):
-        print("Scroling")
-
-    def game(link):
+    def game(self):
         print("Playing Game")
-        while True:
-            if link.battery >= 10:
-                link.battery -= 10
-                print("You have", link.battery, "% left")
-            elif link.battery >= 30:
-                print("Low Battery")
 
-            else:
-                print("Out of battery")
-                break
+        while True:
+            if self.battery >= 10:
+                self.battery -= 10
+                self.games += 1
+                print(self.games, " game done")
+                print("You have", self.battery, "% left")
+                time.sleep(1)
+
+                if self.battery <= 30:
+                    print("Low Battery")
+                    break
+
+

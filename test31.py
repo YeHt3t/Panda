@@ -1,5 +1,5 @@
-from test33 import Smartphone
+from test30 import Smartphone
 
-sm1 = Smartphone("Iphone", "13pro", battery = 100, games = 0)
-sm1.bat()
+sm1 = Smartphone("Iphone", "13pro",)
+sm1.game() 
 # sm1.call()
