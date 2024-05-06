@@ -1,5 +1,5 @@
-from test30 import Smartphone
+from test30 import Smartphoneif as Phone
 
-sm1 = Smartphone("Iphone", "13pro",)
+sm1 = Phone("Iphone", "13pro",)
 sm1.game() 
 # sm1.call()

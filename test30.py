@@ -1,6 +1,6 @@
 import time
 
-class Smartphone():
+class Smartphoneif():
 
     def __init__(self, brand, model, battery=100, games=0):
         self.brand = brand
