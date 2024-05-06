@@ -1,9 +1,11 @@
 class Shop():
     
+    
     def __init__(self, name, weapon, creds=800):
         self.name = name
         self.weapon = weapon
         self.creds = creds
+
 
     def buy_sherif(self):
             print(self.name + " bought a sheriff")
@@ -23,5 +25,13 @@ class Shop():
             print(self.name + " bought a shorty")
             self.creds -= 300
             print(self.name + " has", self.creds, "creds left")
+
+    def buy_classic(self):
+            print(self.name + " bought a classic")
+            self.creds -= 0
+            print(self.name + " has", self.creds, "creds left")
+
+
+
 
 

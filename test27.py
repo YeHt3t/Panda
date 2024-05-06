@@ -14,15 +14,15 @@ from test26 import Shop
 
 name = input("""
              
-                         Enter Username 
+                    Enter Username 
                            
              """)
 
 choice = input("""
                
-                     What would you like to buy
-               spell     shorty    sheriff   ghost
-                200       300        800      500
+                What would you like to buy
+        spell     shorty    sheriff   ghost   Classic
+         200       300        800      500     free
                        You have 800 creds
                
                """)
@@ -38,4 +38,7 @@ if choice == "sheriff":
 if choice == "ghost":
     c3 = Shop(name, "ghost")
     c3.buy_ghost()
+if choice == "classic":
+    c3 = Shop(name, "classic")
+    c3.buy_classic()
 
